@@ -50,7 +50,7 @@ public class minorActivity2 extends AppCompatActivity {
         btn = (Button) findViewById(R.id.btnminor2);
 
 
-        checkBox1=(CheckBox) findViewById(R.id.checkbox1minor2);
+
         checkBox1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
             @Override
             public void onCheckedChanged(CompoundButton buttonView,
@@ -64,7 +64,7 @@ public class minorActivity2 extends AppCompatActivity {
                 }
             }
         });
-        checkBox2=(CheckBox) findViewById(R.id.checkbox2minor2);
+
         checkBox2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
             @Override
             public void onCheckedChanged(CompoundButton buttonView,
@@ -72,33 +72,33 @@ public class minorActivity2 extends AppCompatActivity {
 
                 if(isChecked){
 
-                    MainActivity.stringList[MainActivity.I]=Tview.getText().toString();
+                    MainActivity.stringList[MainActivity.I]=checkBox2.getText().toString();
                     MainActivity.I++;
                     btn.setText("next");
                 }
             }
         });
-        checkBox3=(CheckBox) findViewById(R.id.checkbox3minor2);
+
         checkBox3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
             @Override
             public void onCheckedChanged(CompoundButton buttonView,
                                          boolean isChecked) {
 
                 if(isChecked){
-                    MainActivity.stringList[MainActivity.I]=Tview.getText().toString();
+                    MainActivity.stringList[MainActivity.I]=checkBox3.getText().toString();
                     MainActivity.I++;
                     btn.setText("next");
                 }
             }
         });
-        checkBox4=(CheckBox) findViewById(R.id.checkbox4minor2);
+
         checkBox4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
             @Override
             public void onCheckedChanged(CompoundButton buttonView,
                                          boolean isChecked) {
 
                 if(isChecked){
-                    MainActivity.stringList[MainActivity.I]=Tview.getText().toString();
+                    MainActivity.stringList[MainActivity.I]=checkBox4.getText().toString();
                     MainActivity.I++;
                     btn.setText("next");
                 }
