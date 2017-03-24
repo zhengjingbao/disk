@@ -49,18 +49,20 @@
         android:id="@+id/textviewminor2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:text="Which do you value most when you purchase a good quality product?"
         android:textSize="25dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/checkbox4minor2"
         android:id="@+id/btnminor2"
+        android:background="#96CDCD"
         android:text="please/ choose"
         android:onClick="button_click1"
-        android:layout_marginTop="50dp"
-        />
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/checkbox4minor2"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

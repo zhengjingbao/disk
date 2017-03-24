@@ -13,13 +13,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.littlepangpang.surveyapplication.MainActivity"
     tools:showIn="@layout/activity_minor1">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:id="@+id/textviewminor1"
-        android:text="Gender"
-        android:textSize="25dp"/>
+
     <RadioGroup
         android:id="@+id/radiobtngroupminor1"
         android:layout_width="wrap_content"
@@ -46,14 +40,28 @@
             android:textSize="25dp"/>
 
     </RadioGroup>
-    <Button
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/radiobtngroupminor1"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="48dp"
+        android:id="@+id/textviewminor1"
+        android:text="Gender"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="118dp"
         android:id="@+id/btnminor1"
+        android:background="#96CDCD"
         android:text="please/ choose"
-        android:onClick="button_click1"/>
+        android:onClick="button_click1"
+        android:layout_below="@+id/radiobtngroupminor1"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

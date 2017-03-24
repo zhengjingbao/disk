@@ -28,14 +28,14 @@ public class minorActivity2 extends AppCompatActivity {
     private Button btn = null;
 
 
-    @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_minor2);
         /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);*
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        fab.setOnClickList@Overrideener(new View.OnClickListener() {
             @Override
             public void OnClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
@@ -48,7 +48,9 @@ public class minorActivity2 extends AppCompatActivity {
         checkBox3 = (CheckBox) findViewById(R.id.checkbox3minor2);
         checkBox4 = (CheckBox) findViewById(R.id.checkbox4minor2);
         btn = (Button) findViewById(R.id.btnminor2);
-
+        Tview=(TextView)findViewById(R.id.textviewminor2);
+        MainActivity.stringList[MainActivity.I]=Tview.getText().toString();
+        MainActivity.I++;
 
 
         checkBox1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
@@ -129,9 +131,7 @@ public class minorActivity2 extends AppCompatActivity {
     }
 
     public void button_click1(View view) {
-        Tview=(TextView)findViewById(R.id.textviewminor2);
-        MainActivity.stringList[MainActivity.I]=Tview.getText().toString();
-        MainActivity.I++;
+
 
         btn=(Button)findViewById(R.id.btnminor2);
         if(btn.getText()=="next") {

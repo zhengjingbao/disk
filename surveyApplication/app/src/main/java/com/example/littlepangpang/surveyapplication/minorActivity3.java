@@ -26,12 +26,15 @@ public class minorActivity3 extends AppCompatActivity {
     private ListView Lview=null;
     private Button btn = null;
     private ArrayList stringList=new ArrayList();
-
+    private TextView Tview=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_minor3);
+        Tview=(TextView)findViewById(R.id.textviewminor3);
+        MainActivity.stringList[MainActivity.I]=Tview.getText().toString();
+        MainActivity.I++;
         Lview=(ListView) findViewById(R.id.listviewminor3);
         btn = (Button) findViewById(R.id.btnminor3);
         stringList.add("");
@@ -43,10 +46,27 @@ public class minorActivity3 extends AppCompatActivity {
         Lview.setAdapter(adapter);
         Lview.setOnItemClickListener(new OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-
-                btn.setText("next");
+            public void onItemClick(AdapterView<?> parent, View view,     int position, long id)  {
+              if(stringList.get(position).equals("design"))
+              {
+                  MainActivity.stringList[MainActivity.I]="design";
+                  MainActivity.I++;
+              }
+                else if(stringList.get(position).equals("technics"))
+              {
+                  MainActivity.stringList[MainActivity.I]="technics";
+                  MainActivity.I++;
+              }
+              else if(stringList.get(position).equals("stability"))
+              {
+                  MainActivity.stringList[MainActivity.I]="stability";
+                  MainActivity.I++;
+              }
+              else if(stringList.get(position).equals("functions"))
+              {
+                  MainActivity.stringList[MainActivity.I]="functions";
+                  MainActivity.I++;
+              }
             }
         });
 

@@ -48,6 +48,9 @@ public class minorActivity5 extends AppCompatActivity {
         checkBox4 = (CheckBox) findViewById(R.id.checkbox4minor5);
         checkBox5 = (CheckBox) findViewById(R.id.checkbox5minor5);
         btn = (Button) findViewById(R.id.btnminor5);
+        Tview=(TextView)findViewById(R.id.textviewminor5);
+        MainActivity.stringList[MainActivity.I]=Tview.getText().toString();
+        MainActivity.I++;
         //给RadioGroup设置事件监听
 
         checkBox1=(CheckBox) findViewById(R.id.checkbox1minor5);
@@ -145,9 +148,7 @@ public class minorActivity5 extends AppCompatActivity {
     }
 
     public void button_click1(View view) {
-        Tview=(TextView)findViewById(R.id.textviewminor5);
-        MainActivity.stringList[MainActivity.I]=Tview.getText().toString();
-        MainActivity.I++;
+
 
         btn=(Button)findViewById(R.id.btnminor5);
         if(btn.getText()=="next") {

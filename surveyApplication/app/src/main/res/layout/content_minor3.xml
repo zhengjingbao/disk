@@ -2,14 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <Button
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/listviewminor3"
-        android:id="@+id/btnminor3"
-        android:text="please/ choose"
-        android:onClick="button_click1"
-        android:layout_marginTop="0dp"/>
+        android:id="@+id/textviewminor3"
+        android:text="Which quality indicators do you pay more attention to?"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <ListView
         android:id="@+id/listviewminor3"
@@ -18,16 +19,17 @@
         android:listSelector="@color/colorPrimary"
         android:layout_below="@+id/textviewminor3"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp" />
 
-    <TextView
-        android:layout_width="match_parent"
+    <Button
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
-        android:id="@+id/textviewminor3"
-        android:text="Which quality indicators do you pay more attention to?"
-        android:textSize="25dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/btnminor3"
+        android:text="please/ choose"
+        android:onClick="button_click1"
+        android:background="#96CDCD"
+        android:layout_below="@+id/listviewminor3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
 </RelativeLayout>

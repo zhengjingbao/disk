@@ -44,7 +44,9 @@ public class minorActivity extends AppCompatActivity {
         Rbutton1 = (RadioButton) findViewById(R.id.radiobtn1minor1);
         Rbutton2 = (RadioButton) findViewById(R.id.radiobtn2minor1);
         btn = (Button) findViewById(R.id.btnminor1);
-
+        Tview=(TextView)findViewById(R.id.textviewminor1);
+        MainActivity.stringList[MainActivity.I]=Tview.getText().toString();
+        MainActivity.I++;
         //给RadioGroup设置事件监听
         genderGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -92,9 +94,7 @@ public class minorActivity extends AppCompatActivity {
     }
 
     public void button_click1(View view) {
-        Tview=(TextView)findViewById(R.id.textviewminor1);
-        MainActivity.stringList[MainActivity.I]=Tview.getText().toString();
-        MainActivity.I++;
+
         btn=(Button)findViewById(R.id.btnminor1);
         if(btn.getText()=="next") {
             startActivity(new Intent(this, minorActivity2.class));

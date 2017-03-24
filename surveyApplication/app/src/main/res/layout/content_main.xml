@@ -2,29 +2,29 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:id="@+id/textviewmain"
+        android:textSize="20dp"
+        android:text="Dear Sirs:\n    Thanks for your long time supporting and concerning! In order to offer you better service and make our quality, shipment, and service best match your needs, we developed this blank, please fill in the blank with any of your comments or suggestions, we will listen to your opinions with an open mind, thanks for your cooperation!"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:id="@+id/btnmain"
-        android:layout_marginTop="103dp"
+        android:background="#96CDCD"
+        android:layout_marginTop="85dp"
         android:textSize="20dp"
         android:text="i agree"
         android:onClick="button_click"
         android:layout_below="@+id/textviewmain"
         android:layout_centerHorizontal="true" />
-
-    <TextView
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
-        android:id="@+id/textviewmain"
-        android:textSize="20dp"
-        android:text="Dear Sirs:
-        Thanks for your long time supporting and concerning! In order to offer you better service and make our quality, shipment, and service best match your needs, we developed this blank, please fill in the blank with any of your comments or suggestions, we will listen to your opinions with an open mind, thanks for your cooperation!"
-
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 </RelativeLayout>

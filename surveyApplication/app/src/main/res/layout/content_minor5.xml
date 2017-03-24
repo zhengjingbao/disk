@@ -24,53 +24,59 @@
         android:textSize="25dp"
         android:checked="false"/>
 
-    <CheckBox
-        android:id="@+id/checkbox3minor5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/checkbox2minor5"
-        android:layout_marginTop="24dp"
-        android:text="fair"
-        android:textSize="25dp"
-        android:checked="false"/>
-    <CheckBox
-        android:id="@+id/checkbox4minor5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/checkbox3minor5"
-        android:layout_marginTop="24dp"
-        android:text="poor"
-        android:textSize="25dp"
-        android:checked="false"/>
-    <CheckBox
-        android:id="@+id/checkbox5minor5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/checkbox4minor5"
-        android:layout_marginTop="24dp"
-        android:text="very poor"
-        android:textSize="25dp"
-        android:checked="false"/>
-
     <TextView
         android:id="@+id/textviewminor5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:text="What do you think of our quality?"
         android:textSize="25dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <Button
-        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:id="@+id/checkbox3minor5"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/checkbox5minor5"
+        android:layout_marginTop="20dp"
+        android:text="fair"
+        android:textSize="25dp"
+        android:checked="false"
+        android:layout_below="@+id/checkbox2minor5"
+        android:layout_alignLeft="@+id/checkbox2minor5"
+        android:layout_alignStart="@+id/checkbox2minor5" />
+
+    <CheckBox
+        android:id="@+id/checkbox4minor5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="poor"
+        android:textSize="25dp"
+        android:checked="false"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/checkbox3minor5"
+        android:layout_alignLeft="@+id/checkbox3minor5"
+        android:layout_alignStart="@+id/checkbox3minor5" />
+
+    <CheckBox
+        android:id="@+id/checkbox5minor5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="very poor"
+        android:textSize="25dp"
+        android:checked="false"
+        android:layout_below="@+id/checkbox4minor5"
+        android:layout_alignLeft="@+id/checkbox4minor5"
+        android:layout_alignStart="@+id/checkbox4minor5" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
         android:id="@+id/btnminor5"
         android:text="please/ choose"
         android:onClick="button_click1"
-        android:layout_marginTop="0dp"
-        />
+        android:layout_marginTop="59dp"
+        android:background="#96CDCD"
+        android:layout_below="@+id/checkbox5minor5"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

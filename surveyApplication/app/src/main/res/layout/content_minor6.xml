@@ -2,13 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:id="@+id/textviewminor6"
-        android:text="Compared with other supplies,what do you think of our price?"
-        android:textSize="25dp"/>
     <RadioGroup
         android:id="@+id/radiobtngroupminor6"
         android:layout_width="wrap_content"
@@ -56,12 +49,25 @@
             android:textSize="25dp"/>
 
     </RadioGroup>
-    <Button
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/radiobtngroupminor6"
-        android:layout_marginTop="0dp"
+        android:id="@+id/textviewminor6"
+        android:text="Compared with other supplies,what do you think of our price?"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
         android:id="@+id/btnminor6"
+        android:background="#96CDCD"
         android:text="please/ choose"
-        android:onClick="button_click1"/>
+        android:onClick="button_click1"
+        android:layout_below="@+id/radiobtngroupminor6"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
