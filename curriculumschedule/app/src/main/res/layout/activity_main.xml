@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:titleTextColor="#63B8FF"
-            app:title="               curriculumschedule" />
+            app:title="curriculumschedule" />
 
     </android.support.design.widget.AppBarLayout>
 
